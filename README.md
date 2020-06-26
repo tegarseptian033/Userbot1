@@ -9,14 +9,14 @@
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/luqmanvps/Userbot1/tree/master"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
 <p align="center">&nbsp;</p>
 <h2 align="center">Credits</h2>
-<p align="center">Huge thanks to <a href="https://github.com/Devp73/Userbot1/graphs/contributors">everyone</a> who have helped make this userbot awesome!!</p>
+<p align="center">Huge thanks to <a href="https://github.com/luqmanvps/Userbot1/graphs/contributors">everyone</a> who have helped make this userbot awesome!!</p>
 <p align="center">&nbsp;</p>
 <h2 align="center">Updates and Support</h2>
 <p align="center">Join our <a href="https://t.me/PaperplaneExtended">Telegram Channel</a> for update notifications!</p>
 <p align="center">Also join our <a href="https://t.me/PaperplaneExtendedSupport">Telegram Support Group</a> for help and support!</p>
 <p align="center">&nbsp;</p>
 <h2 align="center">License</h2>
-<p align="center"><a href="https://github.com/Devp73/Userbot1/blob/sql-extended/LICENSE">Raphielscape Public License</a> - Version 1.c, June 2019</p>
+<p align="center"><a href="https://github.com/luqmanvps/Userbot1/blob/sql-extended/LICENSE">Raphielscape Public License</a> - Version 1.c, June 2019</p>
 <p align="center">&nbsp;</p>
 <h1 align="center">Generating string</h1>
 <p align="center">For generating<a href="https://t.me/devkeks/27">string session</a>you can use this commands</p>
