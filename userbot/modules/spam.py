@@ -152,6 +152,47 @@ async def whoizme(e):
         await asyncio.sleep(0.3)
         await e.edit("EVERyBOdy iZ PrO UNtIL U ArRivE 🔥")
 
+@register(outgoing=True, pattern="^.repo")
+async def whoizme(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await asyncio.sleep(0.5)
+        await e.edit("INI")
+        await asyncio.sleep(0.3)
+        await e.edit("AdAlAh")
+        await asyncio.sleep(0.5)
+        await e.edit("RePo")
+        await asyncio.sleep(0.5)
+        await e.edit("Dari ")
+        await asyncio.sleep(0.3)
+        await e.edit("Bod")
+        await asyncio.sleep(0.2)
+        await e.edit("Ini")
+        await asyncio.sleep(0.2)
+        await e.edit("🔥")
+        await asyncio.sleep(0.3)
+        await e.edit("<a href="https://github.com/luqmanvps">Repo</a> 🔥") 
+
+@register(outgoing=True, pattern="^.repo2")
+async def whoizme(e):
+    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
+        await asyncio.sleep(0.5)
+        await e.edit("INI")
+        await asyncio.sleep(0.3)
+        await e.edit("AdAlAh")
+        await asyncio.sleep(0.5)
+        await e.edit("RePo")
+        await asyncio.sleep(0.5)
+        await e.edit("Dari ")
+        await asyncio.sleep(0.3)
+        await e.edit("Bod")
+        await asyncio.sleep(0.2)
+        await e.edit("Ini")
+        await asyncio.sleep(0.2)
+        await e.edit("🔥")
+        await asyncio.sleep(0.3)
+        await e.edit("<a href="https://github.com/luqmanvps">Repo</a> 🔥") 
+
+
 
 CMD_HELP.update({
     "spam":
