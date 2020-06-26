@@ -8,7 +8,8 @@ from asyncio import wait, sleep
 
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP
 from userbot.events import register
-
+from telethon.tl.functions.users import GetFullUserReques
+replied_user = await get_user(event)
 
 @register(outgoing=True, pattern="^.cspam (.*)")
 async def tmeme(e):
@@ -115,7 +116,6 @@ async def whoizme(e):
         await e.edit("Aku Mati Bunuh Diri pake Pestol")
 
 @register(outgoing=True, pattern="^.kill$")
-first_name = replied_user.user.first_name
 async def whoizme(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await e.edit("Target")
@@ -132,7 +132,7 @@ async def whoizme(e):
         await asyncio.sleep(0.3)
         await e.edit("AWM")
         await asyncio.sleep(0.3)
-        await e.edit("{first_name} Meninggal Ditembak AWM")
+        await e.edit("replied_user.user.first_name Meninggal Ditembak AWM")
 
 @register(outgoing=True, pattern="^.upro$")
 async def whoizme(e):
