@@ -170,7 +170,7 @@ async def whoizme(e):
         await asyncio.sleep(0.2)
         await e.edit("🔥")
         await asyncio.sleep(0.3)
-        await e.edit("<a href="https://github.com/luqmanvps/Userbot1">Repo</a> 🔥") 
+        await e.edit("https://github.com/luqmanvps/Userbot1 🔥") 
 
 @register(outgoing=True, pattern="^.repo2")
 async def whoizme(e):
@@ -190,7 +190,7 @@ async def whoizme(e):
         await asyncio.sleep(0.2)
         await e.edit("🔥")
         await asyncio.sleep(0.3)
-        await e.edit("<a href="https://github.com/luqmanvps/Userbot1">Repo</a> 🔥") 
+        await e.edit("https://github.com/luqmanvps/Userbot1") 
 
 @register(outgoing=True, pattern="^.gitdev")
 async def whoizme(e):
@@ -210,7 +210,7 @@ async def whoizme(e):
         await asyncio.sleep(0.2)
         await e.edit("Ini 🔥")
         await asyncio.sleep(0.5)
-        await e.edit("<a href="https://github.com/luqmanvps">Repo</a> 🔥") 
+        await e.edit("https://github.com/luqmanvps") 
 
 
 
