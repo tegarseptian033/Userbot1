@@ -156,9 +156,9 @@ async def whoizme(e):
 async def whoizme(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
         await asyncio.sleep(0.5)
-        await e.edit("INI")
+        await e.edit("InI")
         await asyncio.sleep(0.3)
-        await e.edit("AdAlAh")
+        await e.edit("AdalaH")
         await asyncio.sleep(0.5)
         await e.edit("RePo")
         await asyncio.sleep(0.5)
@@ -170,47 +170,27 @@ async def whoizme(e):
         await asyncio.sleep(0.2)
         await e.edit("🔥")
         await asyncio.sleep(0.3)
-        await e.edit("https://github.com/luqmanvps/Userbot1 🔥") 
+        await e.edit("Klik [Disini](https://github.com/luqmanvps/Userbot1) Untuk Melihat Repo Bot Ini🔥") 
 
-@register(outgoing=True, pattern="^.repo2")
-async def whoizme(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await asyncio.sleep(0.5)
-        await e.edit("INI")
-        await asyncio.sleep(0.3)
-        await e.edit("AdAlAh")
-        await asyncio.sleep(0.5)
-        await e.edit("RePo")
-        await asyncio.sleep(0.5)
-        await e.edit("Dari ")
-        await asyncio.sleep(0.3)
-        await e.edit("Bod")
-        await asyncio.sleep(0.2)
-        await e.edit("Ini")
-        await asyncio.sleep(0.2)
-        await e.edit("🔥")
-        await asyncio.sleep(0.3)
-        await e.edit("https://github.com/luqmanvps/Userbot1") 
 
 @register(outgoing=True, pattern="^.gitdev")
 async def whoizme(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await asyncio.sleep(0.5)
-        await e.edit("INI")
+        await e.edit("InI")
         await asyncio.sleep(0.3)
-        await e.edit("AdAlAh")
+        await e.edit("AdalaH")
         await asyncio.sleep(0.5)
         await e.edit("GITHUB")
         await asyncio.sleep(0.5)
         await e.edit("Dari ")
         await asyncio.sleep(0.3)
-        await e.edit("PeMiLik/Dev")
+        await e.edit("Developer")
         await asyncio.sleep(0.5)
         await e.edit("Bod")
         await asyncio.sleep(0.2)
         await e.edit("Ini 🔥")
         await asyncio.sleep(0.5)
-        await e.edit("https://github.com/luqmanvps") 
+        await e.edit("[Dev Bot Ini](https://github.com/luqmanvps)") 
 
 
 
