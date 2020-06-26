@@ -18,11 +18,7 @@ async def _(event):
        return
     chat = "@QuotLyBot"
     sender = reply_message.sender
-    await event.edit("```Quotly by Luqman.. ```")
-    await event.edit("```Quotly by Luqman.. ```")
-    await event.edit("```Quotly by Luqman.. ```")
-    await event.edit("```Quotly by Luqman.. ```")
-    await event.edit("```Membuat Stiker Dari Pesan Teks..```")
+    await event.edit("```Membuat Stiker Dari Pesan Teks (Quotly by Luqman)..```")
     async with bot.conversation(chat) as conv:
           try:     
               response = conv.wait_event(events.NewMessage(incoming=True,from_users=1031952739))
