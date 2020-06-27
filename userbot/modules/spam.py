@@ -155,27 +155,7 @@ async def whoizme(e):
         await asyncio.sleep(0.3)
         await e.edit("AWM")
         await asyncio.sleep(0.3)
-        await e.edit("Dia, Mati ku-Headshot pake AWM")
-
-
-@register(outgoing=True, pattern="^.repo")
-async def whoizme(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("Ini")
-        await asyncio.sleep(0.3)
-        await e.edit("Adalah")
-        await asyncio.sleep(0.5)
-        await e.edit("Repo")
-        await asyncio.sleep(0.5)
-        await e.edit("Dari ")
-        await asyncio.sleep(0.3)
-        await e.edit("Bod")
-        await asyncio.sleep(0.2)
-        await e.edit("Ini")
-        await asyncio.sleep(0.2)
-        await e.edit("🔥")
-        await asyncio.sleep(0.3)
-        await e.edit("Klik [Disini](https://github.com/luqmanvps/Userbot1) Untuk Melihat Repo Bot Ini🔥") 
+        await e.edit("User Targeted sudah mati ku-Headshot pake AWM")
 
 
 @register(outgoing=True, pattern="^.gitdev")
