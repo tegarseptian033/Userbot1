@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 
 import asyncio
-from asyncio import wait, sleep
+from asyncio import sleep
 
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP
 from userbot.events import register
@@ -24,7 +24,7 @@ async def tmeme(e):
 
 
 @register(outgoing=True, pattern="^.wspam (.*)")
-async def tmeme(e):
+async def t_meme(e):
     wspam = str(e.pattern_match.group(1))
     message = wspam.split()
     await e.delete()
@@ -37,7 +37,7 @@ async def tmeme(e):
 
 
 @register(outgoing=True, pattern="^.spam (.*)")
-async def spammer(e):
+async def spammers(e):
     counter = int(e.pattern_match.group(1).split(' ', 1)[0])
     spam_message = str(e.pattern_match.group(1).split(' ', 1)[1])
     await e.delete()
@@ -203,16 +203,16 @@ async def whoizme(e):
 CMD_HELP.update({
     "spam":
     ".cspam <text>\
-\nUsage: Spam the text letter by letter.\
-\n\n.spam <count> <text>\
-\nUsage: Floods text in the chat !!\
+\nUsage: Spam Text huruf per huruf.\
+\n\n.spam <jumlah> <text>\
+\nUsage: Spam Dengan Pesan Text !!\
 \n\n.wspam <text>\
-\nUsage: Spam the text word by word.\
-\n\n.picspam <count> <link to image/gif>\
+\nUsage: Spam Text Kata per Kata.\
+\n\n.picspam <jumlah> <link ke gambar/gif>\
 \nUsage: As if text spam was not enough !!\
 \n\n.delayspam <delay> <count> <text>\
-\nUsage: .bigspam but with custom delay.\
-\n\n\nNOTE : Spam at your own risk !!"
+\nUsage: .bigspam tapi dengan custom delay.\
+\n\n\nNOTE : Spam Dengan resiko sendiri !!"
 })
 
 
