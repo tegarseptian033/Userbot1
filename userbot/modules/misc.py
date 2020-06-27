@@ -78,7 +78,7 @@ async def killdabot(event):
 async def bot_community(community):
     """ For .community command, just returns OG Paperplane's group link. """
     await community.edit(
-        "Join RaphielGang's awesome userbot community: @userbot_support"
+        "Join RaphielGang's awesome Confih community: @configaja"
         "\nDo note that Paperplane Extended is an unoficial fork of their "
         "Paperplane project and it may get limited or no support for bugs.")
 
@@ -87,13 +87,13 @@ async def bot_community(community):
 async def bot_support(wannahelp):
     """ For .support command, just returns the group link. """
     await wannahelp.edit(
-        "Join the Paperplane Extended Channel: @PaperplaneExtended\
-        \nJoin the Paperplane Extended Chat: @PaperplaneExtendedSupport")
+        "LuqmanBod Channel: @luqmanbod\
+        \nJoin Luqman Bod Chat: @luqmanbod")
 
 
 @register(outgoing=True, pattern="^.creator$")
 async def creator(e):
-    await e.edit("[Dev](https://t.me/devpatel_73)")
+    await e.edit("[Developer](https://t.me/luqmanaja)")
 
 
 @register(outgoing=True, pattern="^.readme$")
@@ -126,7 +126,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        "Click [here](https://github.com/Devp73/Userbot1) to open Paperplane Extended's GitHub page."
+        "Klik [Disini](https://github.com/luqmanvps/Userbot1) Untuk Melihat Repo Bot Ini 🔥."
     )
 
 
