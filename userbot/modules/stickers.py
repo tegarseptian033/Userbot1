@@ -21,14 +21,14 @@ from telethon.tl.types import DocumentAttributeSticker
 KANGING_STR = [
     "Stikermu Ku Colong...",
     "Kage-Bunshin no Stikers..",
-    "...",
+    "Stikermu Bagus, ku colong ya...",
     "Menyolong Stiker ini...",
     "Hey itu Stiker Bagis!\nAku Colong ya...",
     "hehe me stel ur stikér\nhehe.",
     "Liat itu (☉｡☉)!→\nWlAku nyolong stiker itu...",
     "Dua Tiga, Nyolong Stiker, itu bikin pack-ku keren",
     "Membuat Clone Stiker ini...",
-    "Luqman yang Ganteng Sedang nyolong Stikermu... ",
+    "Luqman yang Ganteng sedang nyolong Stikermu... ",
 ]
 
 
@@ -317,7 +317,7 @@ CMD_HELP.update({
 \nUsage: Sama Kayak Colong, tapi digunakan mengganti emoji dengan yang kau pilih.\
 \n\n.colong [number]\
 \nUsage: Colong Stiker ke specified pack, tapi menggunakan 🤔 sebagai emoji.\
-\n\n.kang [emoji('s)] [number]\
+\n\n.colong [emoji('s)] [number]\
 \nUsage: Colong sticker/gambarnya ke specified pack dan menggunakan emoji yang kau pilih.\
 \n\n.stkrinfo\
 \nUsage: Dapatkan info Tentang Stikers Pack."
