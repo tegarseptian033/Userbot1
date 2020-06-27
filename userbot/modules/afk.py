@@ -75,7 +75,7 @@ async def set_afk(afk_e):
     afk_start = start_1.replace(microsecond=0)
     if string:
         AFKREASON = string
-        await afk_e.edit(f"**Aku Ga On Sekarabh!**\
+        await afk_e.edit(f"**Aku Ga On Sekarang!**\
         \nReason: `{string}`")
     else:
         await afk_e.edit("**Aku Ga On Sekarang!**")
@@ -111,7 +111,7 @@ async def type_afk_is_not_true(notafk):
     afk_end = back_alive.replace(microsecond=0)
     if ISAFK:
         ISAFK = False
-        msg = await notafk.respond("**I'm no longer AFK.**")
+        msg = await notafk.respond("**Aku dah Ga AFK.**")
         time.sleep(3)
         await msg.delete()
         await notafk.client(UpdateProfileRequest(first_name=user.first_name, last_name=last1))
