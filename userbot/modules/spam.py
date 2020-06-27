@@ -114,24 +114,6 @@ async def whoizme(e):
         await asyncio.sleep(0.3)
         await e.edit("Nikal lavde pehli fursat me nikal 🤬")
 
-@register(outgoing=True, pattern="^.kill$")
-async def whoizme(e):
-    if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await e.edit("Target")
-        await asyncio.sleep(0.3)
-        await e.edit("locked")
-        await asyncio.sleep(0.2)
-        await e.edit("shot")
-        await asyncio.sleep(0.5)
-        await e.edit("fired")
-        await asyncio.sleep(0.2)
-        await e.edit("killed")
-        await asyncio.sleep(0.3)
-        await e.edit("by")
-        await asyncio.sleep(0.3)
-        await e.edit("AWM")
-        await asyncio.sleep(0.3)
-        await e.edit("User Killed successfully from headshot with AWM")
 
 @register(outgoing=True, pattern="^.upro$")
 async def whoizme(e):
@@ -167,9 +149,9 @@ async def whoizme(e):
         await asyncio.sleep(0.3)
         await e.edit("Meninggal")
         await asyncio.sleep(0.3)
-        await e.edit("Kena")
-        await asyncio.sleep(0.3)
         await e.edit("Headshot")
+        await asyncio.sleep(0.3)
+        await e.edit("pake")
         await asyncio.sleep(0.3)
         await e.edit("AWM")
         await asyncio.sleep(0.3)
