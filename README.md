@@ -2,7 +2,7 @@
 <h3 align="center">A modular Telegram userbot running on Python 3.6+ with an sqlalchemy database.</h3>
 <h4 align="center">Mod by LuqmanVPS <a href="https://github.com/luqmanvps/Userbot1">luqmanbod</a> Telegram userbot...</h4>
 <h4 align="center">...or rather, it's LuqmanBod + insane extras from the community.</h4>
-<p align="center"><a href="#how-to-host">Cara Aktifkan Bot</a> | <a href="#updates-and-support">Updates dan Support</a> | <a href="#credits">Credits</a> | <a href="#license">License</a></p>
+<p align="center"><a href="#cara-aktifkan-bot">Cara Aktifkan Bot</a> | <a href="#updates-and-support">Updates dan Support</a> | <a href="#credits">Credits</a> | <a href="#license">License</a></p>
 <p align="center">&nbsp;</p>
 <h2 align="center">Cara Aktifkan Bot</h2>
 <h5 align="center">Cara Termudah Untuk Jalankan Userbot</h5>
