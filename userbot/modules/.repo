@@ -1,3 +1,0 @@
-
-@register(outgoing=True, pattern="^.repo(?: |$)(.*)")
-await event.edit("```Klik Di<a href="https://github.com/luqmanvps/Userbot1">sini</a>untuk Repo Bot-ku! .```")
