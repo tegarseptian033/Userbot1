@@ -17,6 +17,7 @@ from userbot import CMD_HELP, TEMP_DOWNLOAD_DIRECTORY
 from userbot.events import register
 
 
+
 @register(pattern=".whois(?: |$)(.*)", outgoing=True)
 async def who(event):
 
@@ -143,9 +144,14 @@ async def fetch_info(replied_user, event):
     caption += f"Chat Umum Pengguna Ini: {common_chat}\n"
     caption += f"Link Permanen Ke Profile ini: "
     caption += f"<a href=\"tg://user?id={user_id}\">{first_name}</a>"
+    caption += f""
+    caption += f""
+    caption += f""
+    caption += f""
+    caption += f"Dev Bot Ini: [Telegram](t.me/luqmanaja), [github](github.com/luqmanvps)"
+    caption += f"Repo Bot Ini: [Repo](github.com/luqmanvps/Userbot1)"
 
     return photo, caption
-
 
 @register(pattern=".userinfo(?: |$)(.*)", outgoing=True)
 async def who(event):
@@ -273,8 +279,18 @@ async def fetch_info(replied_user, event):
     caption += f"Chat Umum Pengguna Ini: {common_chat}\n"
     caption += f"Link Permanen Ke Profile ini: "
     caption += f"<a href=\"tg://user?id={user_id}\">{first_name}</a>"
+    caption += f""
+    caption += f""
+    caption += f""
+    caption += f""
+    caption += f"Dev Bot Ini: [Telegram](t.me/luqmanaja), [github](github.com/luqmanvps)"
+    caption += f"Repo Bot Ini: [Repo](github.com/luqmanvps/Userbot1)"
 
     return photo, caption
+
+
+
+
 
 CMD_HELP.update({
     "whois":
