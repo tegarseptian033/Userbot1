@@ -19,20 +19,20 @@ from telethon.tl.types import InputStickerSetID
 from telethon.tl.types import DocumentAttributeSticker
 
 KANGING_STR = [
-    "Using Witchery to kang this sticker...",
-    "Plagiarising hehe...",
-    "Inviting this sticker over to my pack...",
-    "Kanging this sticker...",
-    "Hey that's a nice sticker!\nMind if I kang?!..",
+    "Stikermu Ku Colong...",
+    "Kage-Bunshin no Stikers..",
+    "...",
+    "Menyolong Stiker ini...",
+    "Hey itu Stiker Bagis!\nAku Colong ya...",
     "hehe me stel ur stikér\nhehe.",
-    "Ay look over there (☉｡☉)!→\nWhile I kang this...",
-    "Roses are red violets are blue, kanging this sticker so my pacc looks cool",
-    "Imprisoning this sticker...",
-    "Mr.Steal Your Sticker is stealing this sticker... ",
+    "Liat itu (☉｡☉)!→\nWlAku nyolong stiker itu...",
+    "Dua Tiga, Nyolong Stiker, itu bikin pack-ku keren",
+    "Membuat Clone Stiker ini...",
+    "Luqman yang Ganteng Sedang nyolong Stikermu... ",
 ]
 
 
-@register(outgoing=True, pattern="^.kang")
+@register(outgoing=True, pattern="^.colong")
 async def kang(args):
     """ For .kang command, kangs stickers or creates new ones. """
     user = await bot.get_me()
@@ -71,10 +71,10 @@ async def kang(args):
             is_anim = True
             photo = 1
         else:
-            await args.edit("`Unsupported File!`")
+            await args.edit("`File Buriq!`")
             return
     else:
-        await args.edit("`I can't kang that...`")
+        await args.edit("`Ga Bisa, Tolong hanya me-Reply Stiker atau Gambar...`")
         return
 
     if photo:
@@ -124,12 +124,12 @@ async def kang(args):
                 while "120" in x.text:
                     pack += 1
                     packname = f"a{user.id}_by_{user.username}_{pack}"
-                    packnick = f"@{user.username}'s kang pack Vol.{pack}"
+                    packnick = f"Hasil nyolong @{user.username} Ke.{pack}"
                     await args.edit("`Switching to Pack " + str(pack) +
                                     " due to insufficient space`")
                     await conv.send_message(packname)
                     x = await conv.get_response()
-                    if x.text == "Invalid pack selected.":
+                    if x.text == "Pack Terpilih Invalid!.":
                         await conv.send_message(cmd)
                         await conv.get_response()
                         # Ensure user doesn't get spamming notifications
@@ -166,8 +166,8 @@ async def kang(args):
                         await conv.get_response()
                         # Ensure user doesn't get spamming notifications
                         await bot.send_read_acknowledge(conv.chat_id)
-                        await args.edit(f"`Sticker added in a Different Pack !\
-                            \nThis Pack is Newly created!\
+                        await args.edit(f"`Stiker Dibuat Di Pack Lain! !\
+                            \nPack ini baru dibuat!\
                             \nYour pack can be found [here](t.me/addstickers/{packname})",
                                         parse_mode='md')
                         return
@@ -180,7 +180,7 @@ async def kang(args):
                 rsp = await conv.get_response()
                 if "Sorry, the file type is invalid." in rsp.text:
                     await args.edit(
-                        "`Failed to add sticker, use` @Stickers `bot to add the sticker manually.`"
+                        "`Gagal, pake` @Stickers `bot untuk tambahkan sticker manual.`"
                     )
                     return
                 await conv.send_message(emoji)
@@ -192,7 +192,7 @@ async def kang(args):
                 # Ensure user doesn't get spamming notifications
                 await bot.send_read_acknowledge(conv.chat_id)
         else:
-            await args.edit("`Brewing a new Pack...`")
+            await args.edit("`Membuat Pack Colongan Baru...`")
             async with bot.conversation('Stickers') as conv:
                 await conv.send_message(cmd)
                 await conv.get_response()
@@ -211,7 +211,7 @@ async def kang(args):
                 rsp = await conv.get_response()
                 if "Sorry, the file type is invalid." in rsp.text:
                     await args.edit(
-                        "`Failed to add sticker, use` @Stickers `bot to add the sticker manually.`"
+                        "`Gagal, pake` @Stickers `bot untuk tambah sticker manual.`"
                     )
                     return
                 await conv.send_message(emoji)
@@ -236,8 +236,8 @@ async def kang(args):
                 # Ensure user doesn't get spamming notifications
                 await bot.send_read_acknowledge(conv.chat_id)
 
-        await args.edit(f"`Sticker kanged successfully!`\
-            \nPack can be found [here](t.me/addstickers/{packname})",
+        await args.edit(f"`Stiker Berhasil di Colong!`\
+            \nPack Colongan bisa didapat di [sini](t.me/addstickers/{packname})",
                         parse_mode='md')
 
 
@@ -311,14 +311,14 @@ async def get_pack_info(event):
 
 CMD_HELP.update({
     "stickers":
-    ".kang\
-\nUsage: Reply .kang to a sticker or an image to kang it to your userbot pack.\
-\n\n.kang [emoji('s)]\
-\nUsage: Works just like .kang but uses the emoji('s) you picked.\
-\n\n.kang [number]\
-\nUsage: Kang's the sticker/image to the specified pack but uses 🤔 as emoji.\
+    ".colong\
+\nUsage: Balas .colong ke sebuah stiker atau gambar untuk memasukkan gambar atau stiker tersebut ke luqmanbot pack.\
+\n\n.colong [emoji('s)]\
+\nUsage: Sama Kayak Colong, tapi digunakan mengganti emoji dengan yang kau pilih.\
+\n\n.colong [number]\
+\nUsage: Colong Stiker ke specified pack, tapi menggunakan 🤔 sebagai emoji.\
 \n\n.kang [emoji('s)] [number]\
-\nUsage: Kang's the sticker/image to the specified pack and uses the emoji('s) you picked.\
+\nUsage: Colong sticker/gambarnya ke specified pack dan menggunakan emoji yang kau pilih.\
 \n\n.stkrinfo\
-\nUsage: Gets info about the sticker pack."
+\nUsage: Dapatkan info Tentang Stikers Pack."
 })
