@@ -75,16 +75,16 @@ async def set_afk(afk_e):
     afk_start = start_1.replace(microsecond=0)
     if string:
         AFKREASON = string
-        await afk_e.edit(f"**Going AFK!**\
+        await afk_e.edit(f"**Aku Ga On Sekarabh!**\
         \nReason: `{string}`")
     else:
-        await afk_e.edit("**Going AFK!**")
+        await afk_e.edit("**Aku Ga On Sekarang!**")
     if user.last_name:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name + " [ OFFLINE ]"))
     else:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=" [ OFFLINE ]"))
     if BOTLOG:
-        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nYou went AFK!")
+        await afk_e.client.send_message(BOTLOG_CHATID, "#AFK\nAnda Sedang AFK!")
     ISAFK = True
     afk_time = datetime.now()  # pylint:disable=E0602
     raise StopPropagation
@@ -179,8 +179,8 @@ async def mention_afk(mention):
                 afk_since = f"`{int(seconds)}s`"
             if mention.sender_id not in USERS:
                 if AFKREASON:
-                    await mention.reply(f"I'm AFK since {afk_since}.\
-                        \nReason: `{AFKREASON}`")
+                    await mention.reply(f"Aku AFK dari{afk_since}.\
+                        \nAlasan: `{AFKREASON}`")
                 else:
                     await mention.reply(str(choice(AFKSTR)))
                 USERS.update({mention.sender_id: 1})
@@ -188,8 +188,8 @@ async def mention_afk(mention):
             elif mention.sender_id in USERS:
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await mention.reply(f"I'm AFK since {afk_since}.\
-                            \nReason: `{AFKREASON}`")
+                        await mention.reply(f"Aku AFK dari{afk_since}.\
+                            \nAlasan:: `{AFKREASON}`")
                     else:
                         await mention.reply(str(choice(AFKSTR)))
                     USERS[mention.sender_id] = USERS[mention.sender_id] + 1
@@ -256,8 +256,8 @@ async def afk_on_pm(sender):
                 afk_since = f"`{int(seconds)}s`"
             if sender.sender_id not in USERS:
                 if AFKREASON:
-                    await sender.reply(f"I'm AFK since {afk_since}.\
-                        \nReason: `{AFKREASON}`")
+                    await sender.reply(f"Aku AFK dari {afk_since}.\
+                        \nAlasan: `{AFKREASON}`")
                 else:
                     await sender.reply(str(choice(AFKSTR)))
                 USERS.update({sender.sender_id: 1})
@@ -265,8 +265,8 @@ async def afk_on_pm(sender):
             elif apprv and sender.sender_id in USERS:
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await sender.reply(f"I'm AFK since {afk_since}.\
-                            \nReason: `{AFKREASON}`")
+                        await sender.reply(f"Aku AFK dari {afk_since}.\
+                            \nAlasan: `{AFKREASON}`")
                     else:
                         await sender.reply(str(choice(AFKSTR)))
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1
@@ -279,7 +279,7 @@ async def afk_on_pm(sender):
 CMD_HELP.update({
     "afk":
     "`.afk` [Optional Reason]\
-\nUsage: Sets you as afk.\nReplies to anyone who tags/PM's \
-you telling them that you are AFK(reason).\n\nSwitches off AFK when you type back anything, anywhere.\
+\nUsage: set akunmu AFK.\nBalas Siapapun yg Tag/PM's \
+Kamu memberi tahu alasannya.\n\nAFK otomatis mati jika kamu menulis pesan, dimanapun.\
 "
 })
