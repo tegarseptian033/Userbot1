@@ -161,12 +161,11 @@ async def whoizme(e):
 @register(outgoing=True, pattern="^.repo")
 async def whoizme(e):
     if not e.text[0].isalpha() and e.text[0] not in ("/", "#", "@", "!"):
-        await asyncio.sleep(0.5)
-        await e.edit("InI")
+        await e.edit("Ini")
         await asyncio.sleep(0.3)
-        await e.edit("AdalaH")
+        await e.edit("Adalah")
         await asyncio.sleep(0.5)
-        await e.edit("RePo")
+        await e.edit("Repo")
         await asyncio.sleep(0.5)
         await e.edit("Dari ")
         await asyncio.sleep(0.3)
